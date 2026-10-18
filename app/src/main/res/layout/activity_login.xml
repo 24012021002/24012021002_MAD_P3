@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_screen_bg"
+    android:padding="24dp"
+    tools:context=".LoginActivity">
+
+    <!-- Top GUNI Logo -->
+    <ImageView
+        android:id="@+id/img_guni_logo"
+        android:layout_width="220dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/guni_pink_logo"
+        android:contentDescription="GUNI Logo"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Login Card Container -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="2dp"
+        app:cardBackgroundColor="@color/card_bg"
+        app:strokeWidth="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_guni_logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Email Id Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Email Id"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/et_login_email"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp"
+                    android:hint="" />
+            </LinearLayout>
+
+            <!-- Password Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textSize="15sp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/et_login_password"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:inputType="textPassword"
+                    android:textSize="15sp"
+                    android:hint="" />
+            </LinearLayout>
+
+            <!-- Forgot Password -->
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Forgot Password?"
+                android:textSize="14sp"
+                android:textColor="#757575" />
+
+            <!-- Login Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_login_submit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="28dp"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                app:cornerRadius="24dp"
+                app:backgroundTint="@color/purple_btn" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

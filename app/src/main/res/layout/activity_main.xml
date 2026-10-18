@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <!-- Row 1: Web Url -->
+    <TextView
+        android:id="@+id/tv_web_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Web Url:"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/et_url"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_url"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="32dp"
+        android:text="https://www.google.com"
+        android:textSize="14sp"
+        android:inputType="textUri"
+        app:layout_constraintEnd_toStartOf="@id/btn_browse"
+        app:layout_constraintStart_toEndOf="@id/tv_web_url"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_browse"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="Browse"
+        android:textAllCaps="false"
+        app:cornerRadius="24dp"
+        app:backgroundTint="@color/purple_btn"
+        app:layout_constraintBottom_toBottomOf="@id/et_url"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_url" />
+
+    <!-- Row 2: Phone No. -->
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No.:"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/et_phone"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginTop="20dp"
+        android:text="9999999999"
+        android:textSize="14sp"
+        android:inputType="phone"
+        app:layout_constraintEnd_toStartOf="@id/btn_call"
+        app:layout_constraintStart_toEndOf="@id/tv_phone"
+        app:layout_constraintTop_toBottomOf="@id/et_url" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_call"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:text="Call"
+        android:textAllCaps="false"
+        app:cornerRadius="24dp"
+        app:backgroundTint="@color/purple_btn"
+        app:layout_constraintBottom_toBottomOf="@id/et_phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_phone" />
+
+    <!-- Row 3: Call Log -->
+    <TextView
+        android:id="@+id/tv_call_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call Log:"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_call_log"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_call_log" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_call_log"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Call Log"
+        android:textAllCaps="false"
+        app:cornerRadius="24dp"
+        app:backgroundTint="@color/purple_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_call" />
+
+    <!-- Row 4: Gallery -->
+    <TextView
+        android:id="@+id/tv_gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery:"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_gallery" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_gallery"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Gallery"
+        android:textAllCaps="false"
+        app:cornerRadius="24dp"
+        app:backgroundTint="@color/purple_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_call_log" />
+
+    <!-- Row 5: Camera -->
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Camera:"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_camera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_camera" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_camera"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Camera"
+        android:textAllCaps="false"
+        app:cornerRadius="24dp"
+        app:backgroundTint="@color/purple_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_gallery" />
+
+    <!-- Row 6: Alarm -->
+    <TextView
+        android:id="@+id/tv_alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alarm:"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_alarm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_alarm" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_alarm"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Alarm"
+        android:textAllCaps="false"
+        app:cornerRadius="24dp"
+        app:backgroundTint="@color/purple_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_camera" />
+
+    <!-- Row 7: Login -->
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login:"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btn_login" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        app:cornerRadius="24dp"
+        app:backgroundTint="@color/purple_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_alarm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
