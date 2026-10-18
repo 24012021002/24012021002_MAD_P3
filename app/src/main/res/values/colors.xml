@@ -2,8 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="purple_btn">#5E54A4</color>
+    <color name="purple_btn">#674FA3</color>
+    <color name="btn_text">#FFFFFF</color>
     <color name="guni_pink">#DE3B88</color>
-    <color name="card_bg">#EAE6F7</color>
+    <color name="card_bg">#E7E1EF</color>
     <color name="login_screen_bg">#FFFFFF</color>
+    <color name="forgot_password">#79747E</color>
+    <color name="card_text">#1D1B20</color>
 </resources>
