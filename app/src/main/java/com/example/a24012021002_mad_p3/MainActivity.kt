@@ -14,10 +14,14 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import com.example.a24012021002_mad_p3.R
 
 class MainActivity : AppCompatActivity() {
 
-    private val CALL_PERMISSION_CODE = 101
+    companion object {
+        private const val CALL_PERMISSION_CODE = 101
+    }
+
     private lateinit var etPhone: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
