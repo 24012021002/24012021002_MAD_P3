@@ -1,3 +1,23 @@
 <resources>
     <string name="app_name">24012021002_MAD_P3</string>
+    <string name="web_url_label">Web Url:</string>
+    <string name="phone_no_label">Phone No.:</string>
+    <string name="call_log_label">Call Log:</string>
+    <string name="gallery_label">Gallery:</string>
+    <string name="camera_label">Camera:</string>
+    <string name="alarm_label">Alarm:</string>
+    <string name="login_label">Login:</string>
+    <string name="browse">Browse</string>
+    <string name="call">Call</string>
+    <string name="call_log">Call Log</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="alarm">Alarm</string>
+    <string name="login">Login</string>
+    <string name="default_web_url">https://www.google.com</string>
+    <string name="default_phone">9999999999</string>
+    <string name="guni_logo_desc">GUNI Logo</string>
+    <string name="email_id">Email Id</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
 </resources>
